@@ -3,13 +3,13 @@ ldflags=-lbu
 
 .PHONY: all clean
 
-all: clean knifeuVM
+all: clean knifeuvm
 
-knifeuVM: knifeuVM.o
+knifeuvm: knifeuvm.o
 	cc $(flags) $^ -o $@ $(ldflags)
 
-knifeuVM.o: knifeuVM.c knifeuVM.h
+knifeuvm.o: knifeuvm.c knifeuvm.h
 	cc $(flags) -c $<
 
 clean:
-	rm -f *.o knifeuVM
+	rm -f *.o knifeuvm

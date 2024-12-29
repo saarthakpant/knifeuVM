@@ -1,5 +1,5 @@
 /* knifeuVM.c */
-#include "knifeuVM.h"
+#include "knifeuvm.h"
 
 int main(int argc, char *argv[]) {
     return 0;
